@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Calculadora Countdown</string>
+
+    <!-- Textos-->
+    <string name="main_title">Countdown Calculator</string>
+    <string name="author_name">Marina del Rio</string>
+    <string name="button_start">Start</string>
+    <string name="app_description">A countdown calculator. Enter the date and it calculates how
+        much time you have left until then. </string>
+
+    <!-- Textos especificos para segunda pantalla-->
+    <string name="first_edittext">Date of the event (dd/MM/yyyy)"</string>
+    <string name="second_edittext">Hour of the event (HH:mm)</string>
+</resources>
