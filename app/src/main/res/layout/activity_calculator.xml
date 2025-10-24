@@ -7,30 +7,35 @@
     android:background="@drawable/bg_gradient"
     tools:context=".MainActivity">
 
+
+    <!-- Imagen de fondo-->
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:alpha="0.2"
+        android:contentDescription="@string/app_name"
         android:scaleType="centerCrop"
         android:src="@drawable/reloj"
-        android:alpha="0.2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/app_name" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <!-- Título de la App -->
+
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="108dp"
         android:layout_marginEnd="16dp"
+        android:background="@color/button_color"
         android:fontFamily="sans-serif-condensed"
         android:padding="12dp"
-        android:background="@color/button_color"
         android:text="@string/main_title"
         android:textAlignment="center"
         android:textColor="@color/text_color"
@@ -60,12 +65,66 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/first_edittext"
+        android:textColorHint="@color/hint_color"
         android:inputType="date"
         android:layout_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewAuthor"/>
 
     <!-- Campo para introducir la fecha-->
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/second_edittext"
+        android:textColorHint="@color/hint_color"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
+    <!-- Botón para realizar cálculo-->
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="220dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/button_color"
+        android:padding="12dp"
+        android:text="@string/calculate"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextTime" />
 
+    <!-- Campo para mostrar resultado-->
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:hint="@string/result_hint"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate" />
+
+    <!--Botón para volver atrás-->
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

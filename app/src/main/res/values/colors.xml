@@ -4,5 +4,6 @@
     <color name="bg_end">#8E48CD</color>
     <color name="text_color">#FFFFFFFF</color>
     <color name="button_color">#EDAD08</color>
+    <color name="hint_color">#858C8C8C</color>
 
 </resources>
