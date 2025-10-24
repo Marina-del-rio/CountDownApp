@@ -21,6 +21,10 @@ class CalculatorActivity : AppCompatActivity() {
 
         // Configurar la lógica del botón de calcular
         calculateButton.setOnClickListener {
+
+            //Reiniciar el texto del campo de resultados cada vez que se hace click al botón
+            resultTextView.text = ""
+
             val dateString = dateEditText.text.toString().trim()
             val timeString = timeEditText.text.toString().trim()
 

@@ -71,7 +71,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewAuthor"/>
 
-    <!-- Campo para introducir la fecha-->
+    <!-- Campo para introducir la hora-->
     <EditText
         android:id="@+id/editTextTime"
         android:layout_width="match_parent"
@@ -107,6 +107,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
+        android:text=""
         android:hint="@string/result_hint"
         android:textAlignment="center"
         android:textColor="@color/text_color"
